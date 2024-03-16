@@ -23,6 +23,7 @@
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
+
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.6/dist/sweetalert2.min.css" rel="stylesheet">
 
 </head>
@@ -362,133 +363,106 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Nueva Venta</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Roles</h6>
                         </div>
                         <div class="card-body">
-
-                            <form class="form-inline d-flex justify-content-between align-items-center my-3">
-
-                                
-                                <div class="input-group">
-                                    <h4 class="m-0">13/03/2024 - 17:00</h4>
-                                </div>
-                                <div class="input-group">
-                                    <input type="text" class="form-control bg-light border-0 small" placeholder="Artículo..."
-                                        aria-label="Search" aria-describedby="basic-addon2" id="articulo">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-primary" type="button" id="btnAddArticulo">
-                                            <i class="fas fa-search fa-sm"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="defaultTable" width="100%" cellspacing="0"
-                                style="min-height: 300px;">
-                                    <thead>
-                                        <tr>
-                                            <th>Nombre</th>
-                                            <th>Descripción</th>
-                                            <th>Código</th>
-                                            <th>Cantidad</th>
-                                            <th>Precio</th>
-                                            <th>Subtotal</th>
-                                        </tr>
-                                    </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>Nombre</th>
-                                            <th>Descripción</th>
-                                            <th>Código</th>
-                                            <th>Cantidad</th>
-                                            <th>Precio</th>
-                                            <th>Subtotal</th>
-                                        </tr>
-                                    </tfoot>
-                                    <tbody>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div>
-                                <div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                        <label class="form-check-label" for="exampleRadios1">
-                                            Efectivo
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                        <label class="form-check-label" for="exampleRadios2">
-                                            Tarjeta
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" checked>
-                                        <label class="form-check-label" for="exampleRadios3">
-                                            Transferencia
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="text-right">
-                                    <p style="font-size: xx-large"><b>Total: $----.--</b></p>
-                                </div>
-                            </div>
 
                             <form action="">
                                 <div>
                                     <div class="row mb-2">
-                                        <div class="col-6">
-                                            <input type="text" class="form-control bg-light border-0 small" placeholder="CUIT/DNI..."
-                                            aria-label="cuit" aria-describedby="basic-addon2">
-                                        </div>
-                                        <div class="col-6">
-                                            <input type="text" class="form-control bg-light border-0 small" placeholder="Nombre"
+                                        <div class="col-12">
+                                            <input type="text" class="form-control bg-light border-0 small" placeholder="Nombre..."
                                             aria-label="Nombre" aria-describedby="basic-addon2">
                                         </div>
                                     </div>
                                     <div class="row mb-2">
                                         <div class="col-4">
-                                            <input type="text" class="form-control bg-light border-0 small" placeholder="Condición IVA..."
-                                            aria-label="condIVA" aria-describedby="basic-addon2">
+                                            <h4>Gestión de Artículos</h4>
+                                            <div class="form-group form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Registrar Artículos</label>
+                                            </div>
+                                            <div class="form-group form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                                <label class="form-check-label" for="exampleCheck2">Eliminar Artículos</label>
+                                            </div>
+                                            <div class="form-group form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck3">
+                                                <label class="form-check-label" for="exampleCheck3">Visualizar Precio Compra</label>
+                                            </div>
+                                            <div class="form-group form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck4">
+                                                <label class="form-check-label" for="exampleCheck4">Editar Precios</label>
+                                            </div>
+                                            <div class="form-group form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck5">
+                                                <label class="form-check-label" for="exampleCheck5">Editar Stock</label>
+                                            </div>
                                         </div>
+
                                         <div class="col-4">
-                                            <input type="text" class="form-control bg-light border-0 small" placeholder="Dirección"
-                                            aria-label="Direccion" aria-describedby="basic-addon2">
+                                            <h4>Gestión de Ventas</h4>
+                                            <div class="form-group form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck6">
+                                                <label class="form-check-label" for="exampleCheck6">Registrar Ventas</label>
+                                            </div>
+                                            <div class="form-group form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck7">
+                                                <label class="form-check-label" for="exampleCheck7">Eliminar Ventas</label>
+                                            </div>
+                                            <h4>Gestión de Usuarios</h4>
+                                            <div class="form-group form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck8">
+                                                <label class="form-check-label" for="exampleCheck8">Crear Usuarios</label>
+                                            </div>
+                                            <div class="form-group form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck9">
+                                                <label class="form-check-label" for="exampleCheck9">Crear y Editar Roles</label>
+                                            </div>
                                         </div>
+
                                         <div class="col-4">
-                                            <input type="text" class="form-control bg-light border-0 small" placeholder="Telefono"
-                                            aria-label="Telefono" aria-describedby="basic-addon2">
+                                            <h4>Acceso</h4>
+                                            <div class="form-group form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck11">
+                                                <label class="form-check-label" for="exampleCheck11">Local 1</label>
+                                            </div>
+                                            <div class="form-group form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck12">
+                                                <label class="form-check-label" for="exampleCheck12">Local 2</label>
+                                            </div>
+                                            <div class="form-group form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck13">
+                                                <label class="form-check-label" for="exampleCheck13">Local 2</label>
+                                            </div>
+                                            <h4>Estadísticas y Reportes</h4>
+                                            <div class="form-group form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck10">
+                                                <label class="form-check-label" for="exampleCheck10">Visualizar Estadísticas</label>
+                                            </div>
                                         </div>
+
                                     </div>
-                                    <textarea class="form-control bg-light border-0 small mb-2" placeholder="Observación..."
-                                    aria-label="Observacion" aria-describedby="basic-addon2"></textarea>
-
-
-
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <a href="#" class="btn btn-danger btn-icon-split" id="btnClean">
+                                            <span class="icon text-white-50">
+                                                <i class="fas fa-trash"></i>
+                                            </span>
+                                            <span class="text">Limpiar Todo</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="btn btn-success btn-icon-split" id="btnAddArticulo">
+                                            <span class="icon text-white-50">
+                                                <i class="fas fa-check"></i>
+                                            </span>
+                                            <span class="text">Registrar Rol</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </form>
-
-
-                            <div class="d-flex justify-content-between">
-                                <div>
-                                    <a href="#" class="btn btn-danger btn-icon-split" id="btnClean">
-                                        <span class="icon text-white-50">
-                                            <i class="fas fa-trash"></i>
-                                        </span>
-                                        <span class="text">Limpiar Todo</span>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#" class="btn btn-success btn-icon-split" id="btnSuccess">
-                                        <span class="icon text-white-50">
-                                            <i class="fas fa-check"></i>
-                                        </span>
-                                        <span class="text">Registrar Venta</span>
-                                    </a>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
@@ -556,6 +530,7 @@
     <script src="js/demo/datatables-demo.js"></script>
 
 
+
     <!--SweetAlert2-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.6/dist/sweetalert2.all.min.js"></script>
 
@@ -564,7 +539,7 @@
         const sidebar = document.getElementById('accordionSidebar');
         const negocioElegido = document.getElementById('selectedLocalName');
         const radioInputs = document.querySelectorAll('input[name="localSelectRadio"]');
-        //const loader = document.getElementById('loader');
+
         // Función para cambiar el color del sidebar
         function changeSidebarColor() {
             radioInputs.forEach(input => {
@@ -603,127 +578,26 @@
         changeSidebarColor();
     </script>
 
-
-
     <script>
-        const btnSuccess = document.getElementById('btnSuccess');
+        const btnSuccess = document.getElementById('btnAddArticulo');
         const btnClean = document.getElementById('btnClean');
-        function agregarImagenSiVacio() {
-            var tbody = document.querySelector('tbody');
-
-            // Verificar si el tbody está vacío
-            if (tbody.innerHTML.trim() === '') {
-                tbody.style.position = 'relative';
-                // Crear una fila
-                //var fila = document.createElement('tr');
-                
-                // Crear una celda para la imagen
-                //var celdaImagen = document.createElement('td');
-
-                var div = document.createElement('div');
-                div.id="eliminar";
-                var p = document.createElement('p');
-                p.textContent = "Aquí se verán los detalles de la venta";
-
-                var imagen = document.createElement('img');
-                imagen.src = 'img/noDetVta.png'; // Ruta de tu imagen
-                imagen.style.width = "120px";
-                div.appendChild(imagen);
-                div.appendChild(p);
-                div.style.position = "absolute";
-                div.style.top = "50%";
-                div.style.left = "50%";
-                div.style.transform = "translate(-50%, -50%)";
-                div.style.textAlign = "center";
-                //celdaImagen.appendChild(imagen);
-
-                // Agregar la celda de imagen a la fila
-                //fila.appendChild(imagen);
-
-                // Agregar la fila al tbody
-                tbody.appendChild(div);
-            }
-        }
-
-        // Llamar a la función al cargar la página
-        window.addEventListener('DOMContentLoaded', agregarImagenSiVacio);
         function clean(){
-            var tabla = document.getElementById("defaultTable");
-            tabla.querySelector("tbody").innerHTML = "";
-            agregarImagenSiVacio();
+            var inputs = document.getElementsByClassName('form-control');
+            var inputsArray = Array.from(inputs);
+            inputsArray.forEach(i=>{
+                i.value='';
+            })
         }
         function addArticulo(){
-            
             Swal.fire({
                 title: "Genial!",
-                text: "La venta se guardó correctamente!",
+                text: "El artículo se guardó correctamente!",
                 icon: "success"
             });
-            //clean()
+            clean()
         }
         btnClean.addEventListener('click', clean);
         btnSuccess.addEventListener('click', addArticulo);
-    </script>
-
-    <script>
-        var filaAgregada = 0;
-        const btnAddArticulo = document.getElementById('btnAddArticulo');
-        function actualizarSubtotal(id){
-            var st = document.getElementById(id+'Subtotal');
-            var cantidad = document.getElementById(id);
-            st.textContent = cantidad.value*500;
-        }
-        function addDetVenta(){
-            var del = document.getElementById("eliminar");
-            if(del){
-                del.remove();
-            }
-            //inputs
-            var cod = document.getElementById('articulo');
-
-            // Crear una nueva fila
-            var fila = document.createElement("tr");
-
-            var celdaNombre = document.createElement("td");
-            celdaNombre.textContent = "Articulo 1421";
-            var celdaDescripcion = document.createElement("td");
-            celdaDescripcion.textContent = "Descripcion del Artículo";
-            var celdaPrecio = document.createElement("td");
-            celdaPrecio.textContent = "500";
-            var celdaCodigo = document.createElement("td");
-            celdaCodigo.textContent = cod.value;
-
-            // Agregar las celdas a la fila
-            fila.appendChild(celdaNombre);
-            fila.appendChild(celdaDescripcion);
-            fila.appendChild(celdaCodigo);
-
-            var celdaCantidad = document.createElement("td");
-            var inputCantidad = document.createElement("input");
-            inputCantidad.style.color = "#858796";
-            inputCantidad.style.border = "none";
-            inputCantidad.value = 1;
-            inputCantidad.id = "detVta"+filaAgregada;
-            celdaCantidad.appendChild(inputCantidad);
-            fila.appendChild(celdaCantidad);
-
-            var celdaPrecio = document.createElement("td");
-            celdaPrecio.textContent = 500;
-            fila.appendChild(celdaPrecio);
-
-            var celdaSubtotal = document.createElement("td");
-            celdaSubtotal.textContent = 500;
-            celdaSubtotal.id = "detVta" + filaAgregada + "Subtotal";
-            fila.appendChild(celdaSubtotal);
-            // Agregar la fila a la tabla
-            var tabla = document.getElementById("defaultTable");
-            tabla.getElementsByTagName("tbody")[0].appendChild(fila);
-
-            filaAgregada ++;
-
-            inputCantidad.addEventListener('keyup', function() {actualizarSubtotal(inputCantidad.id)});
-        }
-        btnAddArticulo.addEventListener('click', addDetVenta);
     </script>
 
     <div id="loader" style="
