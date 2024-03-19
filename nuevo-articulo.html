@@ -34,7 +34,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion sticky-top vh-100" id="accordionSidebar">
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion sticky-top" id="accordionSidebar"><!--vh-100-->
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
@@ -94,37 +94,76 @@
             <!-- Divider -->
             <hr class="sidebar-divider">
 
-            <div class="sidebar-heading">
-                Funciones
+
+            <div id="overMenu">
+
+                <div class="sidebar-heading">
+                    Funciones
+                </div>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="articulos.html">
+                        <i class="fas fa-fw fa-chart-area"></i>
+                        <span>Lista</span></a>
+                </li>
+
+                <!-- Nav Item - Tables -->
+                <li class="nav-item">
+                    <a class="nav-link" href="nuevo-articulo.html">
+                        <i class="fas fa-fw fa-table"></i>
+                        <span>Nuevo Artículo</span></a>
+                </li>
+
+                <!-- Nav Item - Tables -->
+                <li class="nav-item">
+                    <a class="nav-link" href="ventas.html">
+                        <i class="fas fa-fw fa-table"></i>
+                        <span>Ventas</span></a>
+                </li>
+
+                <!-- Nav Item - Tables -->
+                <li class="nav-item">
+                    <a class="nav-link" href="nueva-venta.html">
+                        <i class="fas fa-fw fa-table"></i>
+                        <span>Nueva Venta</span></a>
+                </li>
+
+
+                <!-- Administracion -->
+                <hr class="sidebar-divider">
+
+                <div class="sidebar-heading">
+                    Administración
+                </div>
+
+                <!-- Nav Item - Tables -->
+                <li class="nav-item">
+                    <a class="nav-link" href="usuarios.html">
+                        <i class="fas fa-fw fa-table"></i>
+                        <span>Usuarios</span></a>
+                </li>
+
+                <!-- Nav Item - Tables -->
+                <li class="nav-item">
+                    <a class="nav-link" href="nuevo-usuario.html">
+                        <i class="fas fa-fw fa-table"></i>
+                        <span>Nuevo Usuario</span></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="roles.html">
+                        <i class="fas fa-fw fa-chart-area"></i>
+                        <span>Roles</span></a>
+                </li>
+
+                <!-- Nav Item - Tables -->
+                <li class="nav-item">
+                    <a class="nav-link" href="nuevo-rol.html">
+                        <i class="fas fa-fw fa-table"></i>
+                        <span>Nuevo Rol</span></a>
+                </li>
             </div>
-
-            <li class="nav-item">
-                <a class="nav-link" href="articulos.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Lista</span></a>
-            </li>
-
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="nuevo-articulo.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Nuevo Artículo</span></a>
-            </li>
-
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="ventas.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Ventas</span></a>
-            </li>
-
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="nueva-venta.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Nueva Venta</span></a>
-            </li>
-
+            
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
@@ -366,124 +405,6 @@
                             <h6 class="m-0 font-weight-bold text-primary">Nuevo Artículo</h6>
                         </div>
                         <div class="card-body">
-                            <!--
-                            <form class="form-inline d-flex justify-content-between align-items-center my-3">
-
-                                
-                                <div class="input-group">
-                                    <h4 class="m-0">13/03/2024 - 17:00</h4>
-                                </div>
-                                <div class="input-group">
-                                    <input type="text" class="form-control bg-light border-0 small" placeholder="Artículo..."
-                                        aria-label="Search" aria-describedby="basic-addon2">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-primary" type="button">
-                                            <i class="fas fa-search fa-sm"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="defaultTable" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>Nombre</th>
-                                            <th>Descripción</th>
-                                            <th>Código</th>
-                                            <th>Cantidad</th>
-                                            <th>Precio</th>
-                                            <th>Subtotal</th>
-                                        </tr>
-                                    </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>Nombre</th>
-                                            <th>Descripción</th>
-                                            <th>Código</th>
-                                            <th>Cantidad</th>
-                                            <th>Precio</th>
-                                            <th>Subtotal</th>
-                                        </tr>
-                                    </tfoot>
-                                    <tbody>
-                                        <tr>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                        </tr>
-                                        <tr>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                        </tr>
-                                        <tr>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                        </tr>
-                                        <tr>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                        </tr>
-                                        <tr>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                        </tr>
-                                        <tr>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                            <th></th>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div>
-                                <div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                        <label class="form-check-label" for="exampleRadios1">
-                                            Efectivo
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                        <label class="form-check-label" for="exampleRadios2">
-                                            Tarjeta
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" checked>
-                                        <label class="form-check-label" for="exampleRadios3">
-                                            Transferencia
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="text-right">
-                                    <p><b>Total: $----.--</b></p>
-                                </div>
-                            </div>
-                            -->
                             <form action="">
                                 <div>
                                     <div class="row mb-2">
