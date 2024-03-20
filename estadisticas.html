@@ -422,113 +422,185 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <!--
-                    <h1 class="h3 mb-2 text-gray-800">Nueva Venta</h1>
-                    -->
-
-                    <!-- DataTales Example -->
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Roles</h6>
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4" style="gap:23px">
+                        <div style="flex:1">
+                            <select class="form-control shadow border-0 small" id="exampleFormControlSelect1">
+                                <option disabled>Elige un Usuario</option>
+                                <option>Usuario 1</option>
+                                <option>Usuario 2</option>
+                                <option>Usuario 3</option>
+                                <option>Usuario 4</option>
+                                <option>Usuario 5</option>
+                                <option>Usuario 6</option>
+                                <option>Todos</option>
+                            </select>
                         </div>
-                        <div class="card-body">
+                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i> Generar Reporte</a>
+                    </div>
 
-                            <form action="">
-                                <div>
-                                    <div class="row mb-2">
-                                        <div class="col-12">
-                                            <input type="text" class="form-control bg-light border-0 small" placeholder="Nombre..."
-                                            aria-label="Nombre" aria-describedby="basic-addon2">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-2">
-                                        <div class="col-4">
-                                            <h4>Gestión de Artículos</h4>
-                                            <div class="form-group form-check">
-                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                                <label class="form-check-label" for="exampleCheck1">Registrar Artículos</label>
-                                            </div>
-                                            <div class="form-group form-check">
-                                                <input type="checkbox" class="form-check-input" id="exampleCheck2">
-                                                <label class="form-check-label" for="exampleCheck2">Eliminar Artículos</label>
-                                            </div>
-                                            <div class="form-group form-check">
-                                                <input type="checkbox" class="form-check-input" id="exampleCheck3">
-                                                <label class="form-check-label" for="exampleCheck3">Visualizar Precio Compra</label>
-                                            </div>
-                                            <div class="form-group form-check">
-                                                <input type="checkbox" class="form-check-input" id="exampleCheck4">
-                                                <label class="form-check-label" for="exampleCheck4">Editar Precios</label>
-                                            </div>
-                                            <div class="form-group form-check">
-                                                <input type="checkbox" class="form-check-input" id="exampleCheck5">
-                                                <label class="form-check-label" for="exampleCheck5">Editar Stock</label>
-                                            </div>
-                                        </div>
+                    <!-- Content Row -->
+                    <div class="row">
 
-                                        <div class="col-4">
-                                            <h4>Gestión de Ventas</h4>
-                                            <div class="form-group form-check">
-                                                <input type="checkbox" class="form-check-input" id="exampleCheck6">
-                                                <label class="form-check-label" for="exampleCheck6">Registrar Ventas</label>
-                                            </div>
-                                            <div class="form-group form-check">
-                                                <input type="checkbox" class="form-check-input" id="exampleCheck7">
-                                                <label class="form-check-label" for="exampleCheck7">Eliminar Ventas</label>
-                                            </div>
-                                            <h4>Gestión de Usuarios</h4>
-                                            <div class="form-group form-check">
-                                                <input type="checkbox" class="form-check-input" id="exampleCheck8">
-                                                <label class="form-check-label" for="exampleCheck8">Crear Usuarios</label>
-                                            </div>
-                                            <div class="form-group form-check">
-                                                <input type="checkbox" class="form-check-input" id="exampleCheck9">
-                                                <label class="form-check-label" for="exampleCheck9">Crear y Editar Roles</label>
-                                            </div>
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                Earnings (Monthly)</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
                                         </div>
-
-                                        <div class="col-4">
-                                            <h4>Acceso</h4>
-                                            <div class="form-group form-check">
-                                                <input type="checkbox" class="form-check-input" id="exampleCheck11">
-                                                <label class="form-check-label" for="exampleCheck11">Local 1</label>
-                                            </div>
-                                            <div class="form-group form-check">
-                                                <input type="checkbox" class="form-check-input" id="exampleCheck12">
-                                                <label class="form-check-label" for="exampleCheck12">Local 2</label>
-                                            </div>
-                                            <div class="form-group form-check">
-                                                <input type="checkbox" class="form-check-input" id="exampleCheck13">
-                                                <label class="form-check-label" for="exampleCheck13">Local 3</label>
-                                            </div>
-                                            <h4>Estadísticas y Reportes</h4>
-                                            <div class="form-group form-check">
-                                                <input type="checkbox" class="form-check-input" id="exampleCheck10">
-                                                <label class="form-check-label" for="exampleCheck10">Visualizar Estadísticas</label>
-                                            </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
                                         </div>
-
                                     </div>
                                 </div>
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <a href="#" class="btn btn-danger btn-icon-split" id="btnClean">
-                                            <span class="icon text-white-50">
-                                                <i class="fas fa-trash"></i>
-                                            </span>
-                                            <span class="text">Limpiar Todo</span>
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <a href="#" class="btn btn-success btn-icon-split" id="btnAddArticulo">
-                                            <span class="icon text-white-50">
-                                                <i class="fas fa-check"></i>
-                                            </span>
-                                            <span class="text">Registrar Rol</span>
-                                        </a>
+                            </div>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                Earnings (Annual)</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                        </div>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-info shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks
+                                            </div>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="progress progress-sm mr-2">
+                                                        <div class="progress-bar bg-info" role="progressbar"
+                                                            style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                                                            aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pending Requests Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-warning shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                                Pending Requests</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Row -->
+
+                    <div class="row">
+
+                        <!-- Area Chart -->
+                        <div class="col-xl-8 col-lg-7">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
+                                    <div class="dropdown no-arrow">
+                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                            aria-labelledby="dropdownMenuLink">
+                                            <div class="dropdown-header">Dropdown Header:</div>
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <canvas id="myAreaChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pie Chart -->
+                        <div class="col-xl-4 col-lg-5">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
+                                    <div class="dropdown no-arrow">
+                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                            aria-labelledby="dropdownMenuLink">
+                                            <div class="dropdown-header">Dropdown Header:</div>
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-pie pt-4 pb-2">
+                                        <canvas id="myPieChart"></canvas>
+                                    </div>
+                                    <div class="mt-4 text-center small">
+                                        <span class="mr-2">
+                                            <i class="fas fa-circle text-primary"></i> Direct
+                                        </span>
+                                        <span class="mr-2">
+                                            <i class="fas fa-circle text-success"></i> Social
+                                        </span>
+                                        <span class="mr-2">
+                                            <i class="fas fa-circle text-info"></i> Referral
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -595,11 +667,16 @@
     <!-- Page level custom scripts -->
     <script src="js/demo/datatables-demo.js"></script>
 
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
 
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
 
     <!--SweetAlert2-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.6/dist/sweetalert2.all.min.js"></script>
-
+    
     <script>
         // Obtener el sidebar y los radio inputs
         const sidebar = document.getElementById('accordionSidebar');
@@ -643,7 +720,7 @@
         // Llamar a la función al cargar la página para establecer el color inicial
         changeSidebarColor();
     </script>
-
+    <!--
     <script>
         const btnSuccess = document.getElementById('btnAddArticulo');
         const btnClean = document.getElementById('btnClean');
@@ -665,7 +742,7 @@
         btnClean.addEventListener('click', clean);
         btnSuccess.addEventListener('click', addArticulo);
     </script>
-
+    -->
     <div id="loader" style="
     display:none;
     position: fixed;
