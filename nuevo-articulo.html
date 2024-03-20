@@ -101,6 +101,20 @@
                     Funciones
                 </div>
 
+                <!-- Nav Item - Tables -->
+                <li class="nav-item">
+                    <a class="nav-link" href="ventas.html">
+                        <i class="fas fa-fw fa-table"></i>
+                        <span>Ventas</span></a>
+                </li>
+
+                <!-- Nav Item - Tables -->
+                <li class="nav-item">
+                    <a class="nav-link" href="nueva-venta.html">
+                        <i class="fas fa-fw fa-table"></i>
+                        <span>Nueva Venta</span></a>
+                </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="articulos.html">
                         <i class="fas fa-fw fa-chart-area"></i>
@@ -114,18 +128,17 @@
                         <span>Nuevo Artículo</span></a>
                 </li>
 
-                <!-- Nav Item - Tables -->
                 <li class="nav-item">
-                    <a class="nav-link" href="ventas.html">
-                        <i class="fas fa-fw fa-table"></i>
-                        <span>Ventas</span></a>
+                    <a class="nav-link" href="grupos.html">
+                        <i class="fas fa-fw fa-chart-area"></i>
+                        <span>Grupos</span></a>
                 </li>
 
                 <!-- Nav Item - Tables -->
                 <li class="nav-item">
-                    <a class="nav-link" href="nueva-venta.html">
+                    <a class="nav-link" href="nuevo-grupo.html">
                         <i class="fas fa-fw fa-table"></i>
-                        <span>Nueva Venta</span></a>
+                        <span>Nuevo Grupo</span></a>
                 </li>
 
 
@@ -422,16 +435,27 @@
                                     aria-label="Descripción" aria-describedby="basic-addon2"></textarea>
 
                                     <div class="row mb-4">
-                                        <div class="col-6 input-group">
+                                        <div class="col-4 input-group">
                                             <div class="input-group-prepend">
                                                 <div class="input-group-text">$</div>
                                               </div>
                                             <input type="number" class="form-control bg-light border-0 small" placeholder="Precio de Compra"
                                             aria-label="Precio de Compra" aria-describedby="basic-addon2">
                                         </div>
-                                        <div class="col-6">
+                                        <div class="col-4">
                                             <input type="number" class="form-control bg-light border-0 small" placeholder="Stock"
                                             aria-label="Stock" aria-describedby="basic-addon2">
+                                        </div>
+                                        <div class="col-4">
+                                            <select class="form-control bg-light border-0 small" id="exampleFormControlSelect1">
+                                                <option disabled>Elige un Grupo</option>
+                                                <option>Grupo 1</option>
+                                                <option>Grupo 2</option>
+                                                <option>Grupo 3</option>
+                                                <option>Grupo 4</option>
+                                                <option>Grupo 5</option>
+                                                <option>Grupo 6</option>
+                                            </select>
                                         </div>
                                     </div>
 

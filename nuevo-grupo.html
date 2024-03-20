@@ -415,50 +415,42 @@
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Usuarios</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Nuevo Grupo</h6>
                         </div>
                         <div class="card-body">
-                            
-
-
                             <form action="">
                                 <div>
                                     <div class="row mb-2">
-                                        <div class="col-4">
+                                        <div class="col-6">
                                             <input type="text" class="form-control bg-light border-0 small" placeholder="Nombre"
                                             aria-label="Nombre" aria-describedby="basic-addon2">
                                         </div>
-                                        <div class="col-4">
-                                            <input type="text" class="form-control bg-light border-0 small" placeholder="Apellido"
-                                            aria-label="Apellido" aria-describedby="basic-addon2">
-                                        </div>
-                                        <div class="col-4">
-                                            <input type="text" class="form-control bg-light border-0 small" placeholder="Telefono"
-                                            aria-label="Telefono" aria-describedby="basic-addon2">
+                                        <div class="col-6">
+                                            <input type="text" class="form-control bg-light border-0 small" placeholder="% Agregado Efvo"
+                                            aria-label="% Agregado Efvo" aria-describedby="basic-addon2">
                                         </div>
                                     </div>
                                     <div class="row mb-2">
                                         <div class="col-6">
-                                            <input type="text" class="form-control bg-light border-0 small" placeholder="Usuario"
-                                            aria-label="Usuario" aria-describedby="basic-addon2">
+                                            <input type="text" class="form-control bg-light border-0 small" placeholder="% Agregado Efvo (Con IVA)"
+                                            aria-label="% Agregado Efvo (Con IVA)" aria-describedby="basic-addon2">
                                         </div>
                                         <div class="col-6">
-                                            <input type="text" class="form-control bg-light border-0 small" placeholder="Clave"
-                                            aria-label="Clave" aria-describedby="basic-addon2">
+                                            <input type="text" class="form-control bg-light border-0 small" placeholder="% Agregado Tarjeta"
+                                            aria-label="% Agregado Tarjeta" aria-describedby="basic-addon2">
                                         </div>
                                     </div>
                                     <div class="row mb-2">
-                                        <!--<label for="exampleFormControlSelect1">Example select</label>-->
-                                        <div class="col-12">
-                                            <select class="form-control bg-light border-0 small" id="exampleFormControlSelect1">
-                                                <option disabled>Elige un Rol</option>
-                                                <option>Support Engineer</option>
-                                                <option>Developer</option>
-                                                <option>Data Coordinator</option>
-                                                <option>Junior Javascript Developer</option>
-                                            </select>
+                                        <div class="col-6">
+                                            <input type="text" class="form-control bg-light border-0 small" placeholder="% Agregado Tarjeta (3 Cuotas)"
+                                            aria-label="% Agregado Tarjeta (3 Cuotas)" aria-describedby="basic-addon2">
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="text" class="form-control bg-light border-0 small" placeholder="% Agregado Tarjeta (6 Cuotas)"
+                                            aria-label="% Agregado Tarjeta (6 Cuotas)" aria-describedby="basic-addon2">
                                         </div>
                                     </div>
+                                    
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <div>
@@ -474,7 +466,7 @@
                                             <span class="icon text-white-50">
                                                 <i class="fas fa-check"></i>
                                             </span>
-                                            <span class="text">Registrar Artículo</span>
+                                            <span class="text">Registrar Grupo</span>
                                         </a>
                                     </div>
                                 </div>
@@ -607,7 +599,7 @@
         function addArticulo(){
             Swal.fire({
                 title: "Genial!",
-                text: "El artículo se guardó correctamente!",
+                text: "El grupo se guardó correctamente!",
                 icon: "success"
             });
             clean()
